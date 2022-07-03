@@ -1,0 +1,5 @@
+httpx
+bs4
+arrow
+tqdm
+schedule

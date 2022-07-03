@@ -1,0 +1,29 @@
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+#post-list {
+    flex-grow: 1;
+}
+
+#plot {
+    flex-grow: 2;
+}
+
+.list {
+    padding: 0px 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    list-style: none;
+}
+
+.list-item {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.list-item:hover {
+    background-color: lightgray;
+}

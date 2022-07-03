@@ -1,0 +1,21 @@
+{
+  "name": "s1_vote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./visualizer/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^2.9.13"
+  },
+  "dependencies": {
+    "cash-dom": "^8.1.1",
+    "echarts": "^5.3.3",
+    "sql.js-httpvfs": "^0.8.11"
+  }
+}
