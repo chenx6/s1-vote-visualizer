@@ -12,7 +12,7 @@ async def main():
     try:
         # await spider(212958, "三话定命！")
         await spider(191547, "不补可惜")
-        # await spider(191547, "免补避雷")
+        await spider(191547, "免补避雷")
     except Exception as e:
         print(e)
         print_exc()
