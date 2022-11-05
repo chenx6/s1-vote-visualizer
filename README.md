@@ -9,6 +9,7 @@
 python3 -m venv venv && \
     source venv/bin/active && \
     python3 -m pip install -r requirements.txt
+# 将 Cookies 放入 data/cookies.json
 # 运行爬虫
 python3 main.py
 cp data/data.db public/data.db
@@ -35,11 +36,15 @@ npm run build
 │   ├── exchange.py
 │   ├── item.py
 │   ├── pipeline.py
-│   ├── query.py
 │   ├── spider.py
-│   ├── test_all.py
 │   └── update.py
 ├── visualizer       # 可视化相关代码
 │   └── index.js
 └── vite.config.js
 ```
+
+## TODO
+
+- [x] 将推荐和避雷合并在一起
+    - 重新编写 SQL 语句
+- [ ] 将三话定命合并在一起
