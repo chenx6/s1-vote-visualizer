@@ -4,6 +4,7 @@ import * as echarts from "echarts/core";
 import { BarChart } from "echarts/charts";
 import { TitleComponent, TooltipComponent, GridComponent, LegendComponent } from "echarts/components";
 import { CanvasRenderer } from "echarts/renderers";
+import dbUrl from "../data/data.db";
 
 let worker;
 echarts.use([
@@ -26,7 +27,7 @@ const initDatabase = async () => {
         config: {
             serverMode: "full", // file is just a plain old full sqlite database
             requestChunkSize: 4096, // the page size of the  sqlite database (by default 4096)
-            url: "/data.db" // url to the database (relative or full)
+            url: dbUrl // url to the database (relative or full)
         }
     };
     let maxBytesToRead = 10 * 1024 * 1024;
